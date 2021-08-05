@@ -1,7 +1,7 @@
 puzzles
 =======
 
-- [join this discord] (discussions in #puzzles channel)
+- [join the discord] (discussions in #puzzles channel)
 - [youtube playlist]
 
 [join the discord]: https://discord.gg/xDKGPaW
