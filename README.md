@@ -12,3 +12,6 @@ puzzles
 - string literal callable linter (#001)
     - [youtube video](https://youtu.be/KWjGyDflNKQ)
     - [solutions](./solutions/ep001)
+- python rename-exchange package (#002)
+    - youtube video
+    - [solutions](./solutions/ep002)
