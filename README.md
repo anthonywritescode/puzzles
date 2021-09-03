@@ -13,5 +13,5 @@ puzzles
     - [youtube video](https://youtu.be/KWjGyDflNKQ)
     - [solutions](./solutions/ep001)
 - python rename-exchange package (#002)
-    - youtube video
+    - [youtube video](https://youtu.be/Oe1ZxxwofKs)
     - [solutions](./solutions/ep002)
