@@ -15,3 +15,6 @@ puzzles
 - python rename-exchange package (#002)
     - [youtube video](https://youtu.be/Oe1ZxxwofKs)
     - [solutions](./solutions/ep002)
+- complete graph drawing (#003)
+    - [youtube video]()
+    - [solutions](./solutions/ep003)

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+body, html { background: #000; }
+</style>
+</head>
+<body>
+<canvas width=500 height=500></canvas>
+<script>
+(function () {
+    let canvas = document.querySelector('canvas'),
+        ctx = canvas.getContext('2d'),
+        r = (canvas.width - 20) / 2;
+
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const POINTS = 21;
+    let points = [];
+
+    for (let i = 0; i < POINTS; i += 1) {
+        // use polar coordinates to position points
+        // polar is from 0..2pi
+        // x = r * cos(theta), y = r * sin(theta)
+        points.push({
+            x: canvas.width / 2 + r * Math.cos(i / POINTS * 2 * Math.PI),
+            y: canvas.height / 2 + r * Math.sin(i / POINTS * 2 * Math.PI),
+        });
+    }
+
+    ctx.strokeStyle = '#333';
+    ctx.lineWidth = 1;
+
+    for (let i = 0; i < POINTS; i += 1) {
+        for (let j = i + 1; j < POINTS; j += 1) {
+            ctx.beginPath();
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(points[j].x, points[j].y);
+            ctx.stroke();
+        }
+    }
+
+}());
+</script>
+</body>
+</html>
